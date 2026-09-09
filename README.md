@@ -99,22 +99,33 @@ Understand how neural networks learn to predict the next token.
 
 # Phase 2 — Transformers
 
-| #  | Chapter                               | Status     |
-| -- | ------------------------------------- | ---------- |
-| 04 | Attention                             | 🔜 Next    |
-| 05 | Self-Attention & Multi-Head Attention | ⬜ Upcoming |
-| 06 | Transformer Architecture              | ⬜ Upcoming |
+| #  | Chapter                               | Status      |
+| -- | ------------------------------------- | ----------- |
+| 04 | Attention                             | ✅ Completed |
+| 05 | Self-Attention & Multi-Head Attention | 🔜 Next     |
+| 06 | Transformer Architecture              | ⬜ Upcoming  |
 
 ### 04 — Attention
 
+Understand how attention allows a model to determine which information is relevant to a particular token.
+
+**Topics:**
+
 * Query, Key, Value
 * Attention scores
-* Scaling
+* Dot-product similarity
 * Softmax
+* Attention weights
 * Weighted aggregation
+* Multiple queries
+* Scaling
 * Attention from scratch
+* NumPy implementation
+* PyTorch implementation
 
 **Notebook:** `04_attention.ipynb`
+
+---
 
 ### 05 — Self-Attention & Multi-Head Attention
 
@@ -125,6 +136,8 @@ Understand how neural networks learn to predict the next token.
 * Projection
 
 **Notebook:** `05_self_attention.ipynb`
+
+---
 
 ### 06 — Transformer Architecture
 
@@ -332,6 +345,24 @@ The focus is **understanding, not memorization**.
 
 Important concepts will first be implemented from scratch so that the underlying mechanics are clear before using higher-level libraries.
 
+The notebooks follow an interactive learning flow:
+
+```text
+📝 Markdown Explanation
+        ↓
+💻 Code
+        ↓
+🔍 Understand the Output
+        ↓
+📝 Markdown Explanation
+        ↓
+💻 Code
+        ↓
+🧪 Experiment
+        ↓
+➡️ Next Concept
+```
+
 ---
 
 # 📁 Repository Structure
@@ -373,14 +404,14 @@ llm-learning/
 
 ```text
 Phase 1 — Foundations       ██████████  3/3
-Phase 2 — Transformers      ░░░░░░░░░░  0/3
+Phase 2 — Transformers      ███░░░░░░░  1/3
 Phase 3 — Build GPT         ░░░░░░░░░░  0/3
 Phase 4 — Modern LLMs       ░░░░░░░░░░  0/3
 Phase 5 — Applications      ░░░░░░░░░░  0/4
 Phase 6 — Engineering       ░░░░░░░░░░  0/2
 ```
 
-**Overall: 3 / 18 chapters completed**
+**Overall: 4 / 18 chapters completed**
 
 ---
 
@@ -459,8 +490,8 @@ The final project will combine the concepts learned throughout the course into a
 
 ## 🚀 Current Chapter
 
-**Chapter 4 — Attention**
+**Chapter 5 — Self-Attention & Multi-Head Attention**
 
-The next step is to understand how a model can determine **which parts of the input are important when processing a token**.
+Next, we will build on the attention mechanism and understand how **self-attention allows every token in a sequence to interact with other tokens**, followed by causal masking and multi-head attention.
 
 ---
