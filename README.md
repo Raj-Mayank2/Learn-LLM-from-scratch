@@ -175,6 +175,37 @@ Conversation
 Embeddings
 RAG
 Tool calling
+
+
+Repository Structure
+llm-learning/
+│
+├── README.md
+│
+├── 01_what_is_an_llm.ipynb
+├── 02_tokenization_embeddings.ipynb
+├── 03_neural_language_model.ipynb
+│
+├── 04_attention.ipynb
+├── 05_self_attention.ipynb
+├── 06_transformer.ipynb
+│
+├── 07_gpt_from_scratch.ipynb
+├── 08_train_gpt.ipynb
+├── 09_text_generation.ipynb
+│
+├── 10_pretraining_finetuning.ipynb
+├── 11_lora_instruction_tuning.ipynb
+├── 12_huggingface_and_apis.ipynb
+│
+├── 13_prompt_engineering.ipynb
+├── 14_semantic_search.ipynb
+├── 15_rag.ipynb
+├── 16_llm_agents.ipynb
+│
+├── 17_llm_engineering.ipynb
+│
+└── 18_final_llm_application/
 Evaluation
 API
 
