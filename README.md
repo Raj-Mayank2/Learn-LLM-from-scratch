@@ -30,11 +30,11 @@ The course is divided into six phases.
 
 ## Phase 1 — Foundations
 
-| #  | Chapter                                | Status         |
-| -- | -------------------------------------- | -------------- |
-| 01 | [What Is an LLM?](#01--what-is-an-llm) | ✅ Completed    |
-| 02 | Tokenization & Embeddings              | 🔄 In Progress |
-| 03 | Neural Networks for Language Modeling  | ⬜ Upcoming     |
+| #  | Chapter                               | Status      |
+| -- | ------------------------------------- | ----------- |
+| 01 | What Is an LLM?                       | ✅ Completed |
+| 02 | Tokenization & Embeddings             | ✅ Completed |
+| 03 | Neural Networks for Language Modeling | ✅ Completed |
 
 ### 01 — What Is an LLM?
 
@@ -76,17 +76,22 @@ Understand how text is converted into numerical representations.
 
 ### 03 — Neural Networks for Language Modeling
 
-Understand how neural networks learn from numerical language representations.
+Understand how neural networks learn to predict the next token.
 
 **Topics:**
 
 * Neural networks
+* Parameters and weights
 * Forward propagation
+* Activation functions
+* Logits and probabilities
 * Loss
 * Cross-entropy
+* Gradients
 * Backpropagation
 * Gradient descent
 * Training loop
+* Tiny neural language model
 
 **Notebook:** `03_neural_language_model.ipynb`
 
@@ -96,7 +101,7 @@ Understand how neural networks learn from numerical language representations.
 
 | #  | Chapter                               | Status     |
 | -- | ------------------------------------- | ---------- |
-| 04 | Attention                             | ⬜ Upcoming |
+| 04 | Attention                             | 🔜 Next    |
 | 05 | Self-Attention & Multi-Head Attention | ⬜ Upcoming |
 | 06 | Transformer Architecture              | ⬜ Upcoming |
 
@@ -178,6 +183,37 @@ Understand and implement:
 | 11 | LoRA & Instruction Tuning | ⬜ Upcoming |
 | 12 | Hugging Face & LLM APIs   | ⬜ Upcoming |
 
+### 10 — Pretraining & Fine-Tuning
+
+* Pretraining
+* Supervised fine-tuning
+* Instruction datasets
+* Base vs fine-tuned models
+* Parameter-efficient fine-tuning
+
+**Notebook:** `10_pretraining_finetuning.ipynb`
+
+### 11 — LoRA & Instruction Tuning
+
+* Parameter freezing
+* LoRA
+* Instruction following
+* Chat formatting
+* Fine-tuning a model
+
+**Notebook:** `11_lora_instruction_tuning.ipynb`
+
+### 12 — Hugging Face & LLM APIs
+
+* Pretrained models
+* Tokenizers
+* Model inference
+* Generation
+* LLM APIs
+* Streaming
+
+**Notebook:** `12_huggingface_and_apis.ipynb`
+
 ---
 
 # Phase 5 — LLM Applications
@@ -189,6 +225,47 @@ Understand and implement:
 | 15 | RAG                          | ⬜ Upcoming |
 | 16 | LLM Agents & Tool Calling    | ⬜ Upcoming |
 
+### 13 — Prompt Engineering
+
+* Zero-shot prompting
+* Few-shot prompting
+* Structured prompts
+* Output constraints
+* Prompt experimentation
+
+**Notebook:** `13_prompt_engineering.ipynb`
+
+### 14 — Embeddings & Semantic Search
+
+* Document embeddings
+* Cosine similarity
+* Vector search
+* Semantic retrieval
+
+**Notebook:** `14_semantic_search.ipynb`
+
+### 15 — RAG
+
+* Retrieval-Augmented Generation
+* Document ingestion
+* Chunking
+* Embeddings
+* Retrieval
+* Context construction
+* Generation
+
+**Notebook:** `15_rag.ipynb`
+
+### 16 — LLM Agents & Tool Calling
+
+* Tools
+* Function calling
+* Tool selection
+* Tool execution
+* Agent loop
+
+**Notebook:** `16_llm_agents.ipynb`
+
 ---
 
 # Phase 6 — LLM Engineering
@@ -198,9 +275,36 @@ Understand and implement:
 | 17 | Evaluation, Hallucinations & Inference | ⬜ Upcoming |
 | 18 | Final LLM Application                  | ⬜ Upcoming |
 
+### 17 — Evaluation, Hallucinations & Inference
+
+* LLM evaluation
+* Perplexity
+* Hallucinations
+* Grounding
+* KV cache
+* Quantization
+* Inference efficiency
+
+**Notebook:** `17_llm_engineering.ipynb`
+
+### 18 — Final LLM Application
+
+Build a complete LLM application combining:
+
+* LLM
+* Prompting
+* Conversation
+* Embeddings
+* RAG
+* Tool calling
+* Evaluation
+* API
+
+**Project:** `18_final_llm_application/`
+
 ---
 
-# 🧪 Learning Method
+# 🧠 Learning Method
 
 Every chapter follows the same process:
 
@@ -268,7 +372,7 @@ llm-learning/
 # 📊 Progress
 
 ```text
-Phase 1 — Foundations       ██████░░░░  2/3
+Phase 1 — Foundations       ██████████  3/3
 Phase 2 — Transformers      ░░░░░░░░░░  0/3
 Phase 3 — Build GPT         ░░░░░░░░░░  0/3
 Phase 4 — Modern LLMs       ░░░░░░░░░░  0/3
@@ -276,7 +380,7 @@ Phase 5 — Applications      ░░░░░░░░░░  0/4
 Phase 6 — Engineering       ░░░░░░░░░░  0/2
 ```
 
-**Overall: 2 / 18 chapters**
+**Overall: 3 / 18 chapters completed**
 
 ---
 
@@ -297,13 +401,14 @@ Tools and frameworks will be introduced **only when they are relevant to the cur
 
 # 📓 Notebooks
 
-Each chapter will contain a corresponding Google Colab/Jupyter notebook with:
+Each chapter contains a corresponding Google Colab/Jupyter notebook with:
 
 * Explanations
 * Code
 * Experiments
 * Outputs
 * Exercises
+* Interview questions
 * Key takeaways
 
 The notebooks are designed to be understandable independently, so another learner can follow the repository without needing access to the original learning sessions.
@@ -354,8 +459,8 @@ The final project will combine the concepts learned throughout the course into a
 
 ## 🚀 Current Chapter
 
-**Chapter 2 — Tokenization & Embeddings**
+**Chapter 4 — Attention**
 
-Next:
+The next step is to understand how a model can determine **which parts of the input are important when processing a token**.
 
-**Chapter 3 — Neural Networks for Language Modeling**
+---
