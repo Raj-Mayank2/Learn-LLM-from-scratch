@@ -82,14 +82,14 @@ For every chapter:
 
 ## Phase 3 — Build GPT
 
-| #  | Chapter          | Status     |
-| -- | ---------------- | ---------- |
-| 07 | GPT From Scratch | 🔜 Next    |
-| 08 | Train GPT        | ⬜ Upcoming |
-| 09 | Text Generation  | ⬜ Upcoming |
+| #  | Chapter          | Status      |
+| -- | ---------------- | ----------- |
+| 07 | GPT From Scratch | ✅ Completed |
+| 08 | Train GPT        | ✅ Completed |
+| 09 | Text Generation  | ✅ Completed |
 
 ```text
-░░░░░░░░░░  0/3
+██████████  3/3
 ```
 
 ---
@@ -98,7 +98,7 @@ For every chapter:
 
 | #  | Chapter                   | Status     |
 | -- | ------------------------- | ---------- |
-| 10 | Pretraining & Fine-Tuning | ⬜ Upcoming |
+| 10 | Pretraining & Fine-Tuning | 🔜 Next    |
 | 11 | LoRA & Instruction Tuning | ⬜ Upcoming |
 | 12 | Hugging Face & LLM APIs   | ⬜ Upcoming |
 
@@ -139,10 +139,10 @@ For every chapter:
 # 📊 Overall Progress
 
 ```text
-██████░░░░  6/18
+█████████░  9/18
 ```
 
-**6 of 18 chapters completed**
+**9 of 18 chapters completed**
 
 ---
 
@@ -321,33 +321,13 @@ $$
 
 ### Core Equations
 
-Residual connection:
-
 $$
 Y=X+F(X)
 $$
 
-Feed-forward network:
-
 $$
 FFN(x)=W_2\,GELU(W_1x+b_1)+b_2
 $$
-
-Transformer block:
-
-```text
-Input
-  ↓
-Multi-Head Self-Attention
-  ↓
-Residual + LayerNorm
-  ↓
-Feed-Forward Network
-  ↓
-Residual + LayerNorm
-  ↓
-Output
-```
 
 ### Notebook
 
@@ -355,28 +335,87 @@ Output
 
 ---
 
-# 🔜 Current Chapter
-
 ## Chapter 7 — GPT From Scratch
 
-Now we move from understanding individual Transformer components to building an actual **GPT-style model**.
-
-### Topics
+### Topics Covered
 
 * Decoder-only architecture
+* Character-level tokenizer
+* Real text dataset
+* Token IDs
 * Token embeddings
 * Positional embeddings
-* Transformer blocks
 * Causal self-attention
-* Feed-forward networks
+* Transformer blocks
 * Language-model head
-* Complete GPT model
+* Complete tiny GPT
 * Forward pass
-* Parameter counting
+* Next-token logits
 
 ### Notebook
 
 `07_gpt_from_scratch.ipynb`
+
+---
+
+## Chapter 8 — Train GPT
+
+### Topics Covered
+
+* Dataset preparation
+* Train/validation split
+* Batching
+* Context windows
+* Next-token prediction
+* Cross-entropy loss
+* AdamW optimizer
+* Training loop
+* Validation loss
+* Model checkpoints
+* Training a tiny GPT on real text
+
+### Notebook
+
+`08_train_gpt.ipynb`
+
+---
+
+## Chapter 9 — Text Generation
+
+### Topics Covered
+
+* Logits and probabilities
+* Greedy decoding
+* Random sampling
+* Temperature
+* Top-K sampling
+* Top-P / nucleus sampling
+* Controlled text generation
+* Generation experiments
+
+### Notebook
+
+`09_text_generation.ipynb`
+
+---
+
+# 🔜 Current Chapter
+
+## Chapter 10 — Pretraining & Fine-Tuning
+
+Now we'll move from our tiny GPT to understanding how **modern LLMs are actually trained and adapted**.
+
+### Topics
+
+* Pretraining
+* Supervised fine-tuning
+* Instruction datasets
+* Base vs fine-tuned models
+* Parameter-efficient fine-tuning
+
+### Notebook
+
+`10_pretraining_finetuning.ipynb`
 
 ---
 
@@ -458,8 +497,8 @@ Production LLM Application
 
 # 🚀 Status
 
-**Current:** Chapter 6 completed ✅
+**Current:** Chapter 9 completed ✅
 
-**Next:** Chapter 7 — GPT From Scratch 🔜
+**Next:** Chapter 10 — Pretraining & Fine-Tuning 🔜
 
-**Overall:** 6 / 18 chapters completed
+**Overall:** 9 / 18 chapters completed
