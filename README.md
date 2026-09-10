@@ -60,8 +60,6 @@ For every chapter:
 | 02 | Tokenization & Embeddings             | ✅ Completed |
 | 03 | Neural Networks for Language Modeling | ✅ Completed |
 
-### Progress
-
 ```text
 ██████████  3/3
 ```
@@ -74,12 +72,10 @@ For every chapter:
 | -- | ------------------------------------- | ----------- |
 | 04 | Attention                             | ✅ Completed |
 | 05 | Self-Attention & Multi-Head Attention | ✅ Completed |
-| 06 | Transformer Architecture              | 🔜 Next     |
-
-### Progress
+| 06 | Transformer Architecture              | ✅ Completed |
 
 ```text
-██████░░░░  2/3
+██████████  3/3
 ```
 
 ---
@@ -88,11 +84,9 @@ For every chapter:
 
 | #  | Chapter          | Status     |
 | -- | ---------------- | ---------- |
-| 07 | GPT From Scratch | ⬜ Upcoming |
+| 07 | GPT From Scratch | 🔜 Next    |
 | 08 | Train GPT        | ⬜ Upcoming |
 | 09 | Text Generation  | ⬜ Upcoming |
-
-### Progress
 
 ```text
 ░░░░░░░░░░  0/3
@@ -107,8 +101,6 @@ For every chapter:
 | 10 | Pretraining & Fine-Tuning | ⬜ Upcoming |
 | 11 | LoRA & Instruction Tuning | ⬜ Upcoming |
 | 12 | Hugging Face & LLM APIs   | ⬜ Upcoming |
-
-### Progress
 
 ```text
 ░░░░░░░░░░  0/3
@@ -125,8 +117,6 @@ For every chapter:
 | 15 | RAG                          | ⬜ Upcoming |
 | 16 | LLM Agents & Tool Calling    | ⬜ Upcoming |
 
-### Progress
-
 ```text
 ░░░░░░░░░░  0/4
 ```
@@ -140,8 +130,6 @@ For every chapter:
 | 17 | Evaluation, Hallucinations & Inference | ⬜ Upcoming |
 | 18 | Final LLM Application                  | ⬜ Upcoming |
 
-### Progress
-
 ```text
 ░░░░░░░░░░  0/2
 ```
@@ -151,10 +139,10 @@ For every chapter:
 # 📊 Overall Progress
 
 ```text
-█████░░░░░  5/18
+██████░░░░  6/18
 ```
 
-**5 of 18 chapters completed**
+**6 of 18 chapters completed**
 
 ---
 
@@ -171,7 +159,6 @@ For every chapter:
 * Training vs inference
 * Parameters and weights
 * Basic statistical language models
-* Probability of language
 
 ### Notebook
 
@@ -284,8 +271,6 @@ $$
 
 ### Core Equations
 
-Query, Key and Value:
-
 $$
 Q=XW_Q
 $$
@@ -298,8 +283,6 @@ $$
 V=XW_V
 $$
 
-Self-attention:
-
 $$
 Attention(Q,K,V)
 =
@@ -307,16 +290,6 @@ softmax
 \left(
 \frac{QK^T}{\sqrt{d_k}}
 \right)V
-$$
-
-Multi-head attention:
-
-$$
-head_i =
-Attention
-(XW_Q^{(i)},
-XW_K^{(i)},
-XW_V^{(i)})
 $$
 
 $$
@@ -330,27 +303,80 @@ $$
 
 ---
 
-# 🔜 Current Chapter
-
 ## Chapter 6 — Transformer Architecture
 
-We will now take everything learned so far and build a **complete Transformer block**.
-
-### Topics
+### Topics Covered
 
 * Transformer blocks
+* Multi-head self-attention
 * Residual connections
 * Layer normalization
 * Feed-forward networks
+* GELU activation
 * Dropout
-* Positional embeddings
+* Causal attention
 * Complete Transformer block
 * PyTorch implementation
-* Architecture experiments
+* Transformer shape tracking
+
+### Core Equations
+
+Residual connection:
+
+$$
+Y=X+F(X)
+$$
+
+Feed-forward network:
+
+$$
+FFN(x)=W_2\,GELU(W_1x+b_1)+b_2
+$$
+
+Transformer block:
+
+```text
+Input
+  ↓
+Multi-Head Self-Attention
+  ↓
+Residual + LayerNorm
+  ↓
+Feed-Forward Network
+  ↓
+Residual + LayerNorm
+  ↓
+Output
+```
 
 ### Notebook
 
 `06_transformer.ipynb`
+
+---
+
+# 🔜 Current Chapter
+
+## Chapter 7 — GPT From Scratch
+
+Now we move from understanding individual Transformer components to building an actual **GPT-style model**.
+
+### Topics
+
+* Decoder-only architecture
+* Token embeddings
+* Positional embeddings
+* Transformer blocks
+* Causal self-attention
+* Feed-forward networks
+* Language-model head
+* Complete GPT model
+* Forward pass
+* Parameter counting
+
+### Notebook
+
+`07_gpt_from_scratch.ipynb`
 
 ---
 
@@ -386,7 +412,7 @@ llm-learning/
 
 # 🎯 Final Goal
 
-By completing all 18 chapters, the goal is to understand the complete LLM stack:
+Understand the complete LLM stack:
 
 ```text
 Language
@@ -432,8 +458,8 @@ Production LLM Application
 
 # 🚀 Status
 
-**Current:** Chapter 5 completed ✅
+**Current:** Chapter 6 completed ✅
 
-**Next:** Chapter 6 — Transformer Architecture 🔜
+**Next:** Chapter 7 — GPT From Scratch 🔜
 
-**Overall:** 5 / 18 chapters completed
+**Overall:** 6 / 18 chapters completed
