@@ -228,16 +228,6 @@ For every chapter:
 * PyTorch implementation
 * Attention experiments
 
-### Core Equation
-
-$$
-Attention(Q,K,V)
-=
-softmax
-\left(
-\frac{QK^T}{\sqrt{d_k}}
-\right)V
-$$
 
 ### Notebook
 
@@ -269,33 +259,6 @@ $$
 * Self-attention vs cross-attention
 * Multi-head attention experiments
 
-### Core Equations
-
-$$
-Q=XW_Q
-$$
-
-$$
-K=XW_K
-$$
-
-$$
-V=XW_V
-$$
-
-$$
-Attention(Q,K,V)
-=
-softmax
-\left(
-\frac{QK^T}{\sqrt{d_k}}
-\right)V
-$$
-
-$$
-MultiHead =
-Concat(head_1,\ldots,head_h)W_O
-$$
 
 ### Notebook
 
