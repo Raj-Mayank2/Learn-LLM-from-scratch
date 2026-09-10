@@ -228,22 +228,8 @@ For every chapter:
 * PyTorch implementation
 * Attention experiments
 
-### Core Equation
 
-$$
-Attention(Q,K,V)
-=
-softmax
-\left(
-\frac{QK^T}{\sqrt{d_k}}
-\right)V
-$$
 
-### Notebook
-
-`04_attention.ipynb`
-
----
 
 ## Chapter 5 — Self-Attention & Multi-Head Attention
 
