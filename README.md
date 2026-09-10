@@ -270,18 +270,7 @@ V=XW_V
 $$
 
 $$
-Attention(Q,K,V)
-=
-softmax
-\left(
-\frac{QK^T}{\sqrt{d_k}}
-\right)V
-$$
 
-$$
-MultiHead =
-Concat(head_1,\ldots,head_h)W_O
-$$
 
 ### Notebook
 
