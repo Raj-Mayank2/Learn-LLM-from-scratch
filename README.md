@@ -1,325 +1,14 @@
-# 🧠 LLM Learning From Scratch
+# 🧠 LLM Learning — From Fundamentals to Production
 
-A **hands-on, code-first journey to understanding Large Language Models from the ground up**.
-
-This repository contains my learning notes, explanations, experiments, and Google Colab notebooks as I work through LLM concepts step by step.
-
-The goal is not simply to learn how to **use** LLMs, but to understand **how they work internally** and eventually build a complete LLM-powered application.
+A structured, hands-on journey to understand **Large Language Models from first principles**, implement the core concepts from scratch, and gradually build a complete LLM-powered application.
 
 ---
 
-## 🎯 Goal
+## 📚 Learning Philosophy
 
-By completing this repository, I aim to understand:
+This repository focuses on **understanding, not memorization**.
 
-* How language models work
-* How text is represented numerically
-* How neural networks learn language
-* How attention and Transformers work
-* How GPT-style models are built
-* How LLMs are trained and fine-tuned
-* How modern LLM applications are built
-* How RAG and tool-using agents work
-* How LLM applications are evaluated and optimized
-
----
-
-# 📚 Learning Path
-
-The course is divided into six phases.
-
-## Phase 1 — Foundations
-
-| #  | Chapter                               | Status      |
-| -- | ------------------------------------- | ----------- |
-| 01 | What Is an LLM?                       | ✅ Completed |
-| 02 | Tokenization & Embeddings             | ✅ Completed |
-| 03 | Neural Networks for Language Modeling | ✅ Completed |
-
-### 01 — What Is an LLM?
-
-Learn the fundamental idea behind language models.
-
-**Topics:**
-
-* AI → ML → Deep Learning → NLP → LLM
-* Language modeling
-* Tokens and next-token prediction
-* Training vs inference
-* Parameters and weights
-* Basic statistical language model
-
-**Notebook:** `01_what_is_an_llm.ipynb`
-
----
-
-### 02 — Tokenization & Embeddings
-
-Understand how text is converted into numerical representations.
-
-**Topics:**
-
-* Character-level tokenization
-* Word-level tokenization
-* Subword tokenization
-* Vocabulary
-* Token IDs
-* Encoding and decoding
-* Token embeddings
-* Embedding dimensions
-* Embedding matrices
-* Positional information
-
-**Notebook:** `02_tokenization_embeddings.ipynb`
-
----
-
-### 03 — Neural Networks for Language Modeling
-
-Understand how neural networks learn to predict the next token.
-
-**Topics:**
-
-* Neural networks
-* Parameters and weights
-* Forward propagation
-* Activation functions
-* Logits and probabilities
-* Loss
-* Cross-entropy
-* Gradients
-* Backpropagation
-* Gradient descent
-* Training loop
-* Tiny neural language model
-
-**Notebook:** `03_neural_language_model.ipynb`
-
----
-
-# Phase 2 — Transformers
-
-| #  | Chapter                               | Status      |
-| -- | ------------------------------------- | ----------- |
-| 04 | Attention                             | ✅ Completed |
-| 05 | Self-Attention & Multi-Head Attention | 🔜 Next     |
-| 06 | Transformer Architecture              | ⬜ Upcoming  |
-
-### 04 — Attention
-
-Understand how attention allows a model to determine which information is relevant to a particular token.
-
-**Topics:**
-
-* Query, Key, Value
-* Attention scores
-* Dot-product similarity
-* Softmax
-* Attention weights
-* Weighted aggregation
-* Multiple queries
-* Scaling
-* Attention from scratch
-* NumPy implementation
-* PyTorch implementation
-
-**Notebook:** `04_attention.ipynb`
-
----
-
-### 05 — Self-Attention & Multi-Head Attention
-
-* Self-attention
-* Causal masking
-* Multiple attention heads
-* Concatenation
-* Projection
-
-**Notebook:** `05_self_attention.ipynb`
-
----
-
-### 06 — Transformer Architecture
-
-* Transformer blocks
-* Residual connections
-* Layer normalization
-* Feed-forward networks
-* Dropout
-* Positional embeddings
-
-**Notebook:** `06_transformer.ipynb`
-
----
-
-# Phase 3 — Build GPT
-
-| #  | Chapter          | Status     |
-| -- | ---------------- | ---------- |
-| 07 | GPT From Scratch | ⬜ Upcoming |
-| 08 | Train GPT        | ⬜ Upcoming |
-| 09 | Text Generation  | ⬜ Upcoming |
-
-### 07 — GPT From Scratch
-
-Build a complete decoder-only GPT-style model.
-
-**Notebook:** `07_gpt_from_scratch.ipynb`
-
-### 08 — Train GPT
-
-Train our GPT model using next-token prediction.
-
-**Notebook:** `08_train_gpt.ipynb`
-
-### 09 — Text Generation
-
-Understand and implement:
-
-* Logits
-* Probabilities
-* Temperature
-* Greedy decoding
-* Random sampling
-* Top-K
-* Top-P
-
-**Notebook:** `09_text_generation.ipynb`
-
----
-
-# Phase 4 — Modern LLMs
-
-| #  | Chapter                   | Status     |
-| -- | ------------------------- | ---------- |
-| 10 | Pretraining & Fine-Tuning | ⬜ Upcoming |
-| 11 | LoRA & Instruction Tuning | ⬜ Upcoming |
-| 12 | Hugging Face & LLM APIs   | ⬜ Upcoming |
-
-### 10 — Pretraining & Fine-Tuning
-
-* Pretraining
-* Supervised fine-tuning
-* Instruction datasets
-* Base vs fine-tuned models
-* Parameter-efficient fine-tuning
-
-**Notebook:** `10_pretraining_finetuning.ipynb`
-
-### 11 — LoRA & Instruction Tuning
-
-* Parameter freezing
-* LoRA
-* Instruction following
-* Chat formatting
-* Fine-tuning a model
-
-**Notebook:** `11_lora_instruction_tuning.ipynb`
-
-### 12 — Hugging Face & LLM APIs
-
-* Pretrained models
-* Tokenizers
-* Model inference
-* Generation
-* LLM APIs
-* Streaming
-
-**Notebook:** `12_huggingface_and_apis.ipynb`
-
----
-
-# Phase 5 — LLM Applications
-
-| #  | Chapter                      | Status     |
-| -- | ---------------------------- | ---------- |
-| 13 | Prompt Engineering           | ⬜ Upcoming |
-| 14 | Embeddings & Semantic Search | ⬜ Upcoming |
-| 15 | RAG                          | ⬜ Upcoming |
-| 16 | LLM Agents & Tool Calling    | ⬜ Upcoming |
-
-### 13 — Prompt Engineering
-
-* Zero-shot prompting
-* Few-shot prompting
-* Structured prompts
-* Output constraints
-* Prompt experimentation
-
-**Notebook:** `13_prompt_engineering.ipynb`
-
-### 14 — Embeddings & Semantic Search
-
-* Document embeddings
-* Cosine similarity
-* Vector search
-* Semantic retrieval
-
-**Notebook:** `14_semantic_search.ipynb`
-
-### 15 — RAG
-
-* Retrieval-Augmented Generation
-* Document ingestion
-* Chunking
-* Embeddings
-* Retrieval
-* Context construction
-* Generation
-
-**Notebook:** `15_rag.ipynb`
-
-### 16 — LLM Agents & Tool Calling
-
-* Tools
-* Function calling
-* Tool selection
-* Tool execution
-* Agent loop
-
-**Notebook:** `16_llm_agents.ipynb`
-
----
-
-# Phase 6 — LLM Engineering
-
-| #  | Chapter                                | Status     |
-| -- | -------------------------------------- | ---------- |
-| 17 | Evaluation, Hallucinations & Inference | ⬜ Upcoming |
-| 18 | Final LLM Application                  | ⬜ Upcoming |
-
-### 17 — Evaluation, Hallucinations & Inference
-
-* LLM evaluation
-* Perplexity
-* Hallucinations
-* Grounding
-* KV cache
-* Quantization
-* Inference efficiency
-
-**Notebook:** `17_llm_engineering.ipynb`
-
-### 18 — Final LLM Application
-
-Build a complete LLM application combining:
-
-* LLM
-* Prompting
-* Conversation
-* Embeddings
-* RAG
-* Tool calling
-* Evaluation
-* API
-
-**Project:** `18_final_llm_application/`
-
----
-
-# 🧠 Learning Method
-
-Every chapter follows the same process:
+For every chapter:
 
 ```text
 📖 Theory
@@ -332,20 +21,16 @@ Every chapter follows the same process:
    ↓
 🧪 Experiments
    ↓
-🎯 Interview Questions
+🎤 Interview Questions
    ↓
-📓 Google Colab Notebook
+📓 Clean Colab Notebook
    ↓
 🐙 GitHub
    ↓
 ➡️ Next Chapter
 ```
 
-The focus is **understanding, not memorization**.
-
-Important concepts will first be implemented from scratch so that the underlying mechanics are clear before using higher-level libraries.
-
-The notebooks follow an interactive learning flow:
+### Notebook Learning Flow
 
 ```text
 📝 Markdown Explanation
@@ -365,7 +50,311 @@ The notebooks follow an interactive learning flow:
 
 ---
 
-# 📁 Repository Structure
+# 🗺️ Complete Roadmap
+
+## Phase 1 — Foundations
+
+| #  | Chapter                               | Status      |
+| -- | ------------------------------------- | ----------- |
+| 01 | What Is an LLM?                       | ✅ Completed |
+| 02 | Tokenization & Embeddings             | ✅ Completed |
+| 03 | Neural Networks for Language Modeling | ✅ Completed |
+
+### Progress
+
+```text
+██████████  3/3
+```
+
+---
+
+## Phase 2 — Transformers
+
+| #  | Chapter                               | Status      |
+| -- | ------------------------------------- | ----------- |
+| 04 | Attention                             | ✅ Completed |
+| 05 | Self-Attention & Multi-Head Attention | ✅ Completed |
+| 06 | Transformer Architecture              | 🔜 Next     |
+
+### Progress
+
+```text
+██████░░░░  2/3
+```
+
+---
+
+## Phase 3 — Build GPT
+
+| #  | Chapter          | Status     |
+| -- | ---------------- | ---------- |
+| 07 | GPT From Scratch | ⬜ Upcoming |
+| 08 | Train GPT        | ⬜ Upcoming |
+| 09 | Text Generation  | ⬜ Upcoming |
+
+### Progress
+
+```text
+░░░░░░░░░░  0/3
+```
+
+---
+
+## Phase 4 — Modern LLMs
+
+| #  | Chapter                   | Status     |
+| -- | ------------------------- | ---------- |
+| 10 | Pretraining & Fine-Tuning | ⬜ Upcoming |
+| 11 | LoRA & Instruction Tuning | ⬜ Upcoming |
+| 12 | Hugging Face & LLM APIs   | ⬜ Upcoming |
+
+### Progress
+
+```text
+░░░░░░░░░░  0/3
+```
+
+---
+
+## Phase 5 — LLM Applications
+
+| #  | Chapter                      | Status     |
+| -- | ---------------------------- | ---------- |
+| 13 | Prompt Engineering           | ⬜ Upcoming |
+| 14 | Embeddings & Semantic Search | ⬜ Upcoming |
+| 15 | RAG                          | ⬜ Upcoming |
+| 16 | LLM Agents & Tool Calling    | ⬜ Upcoming |
+
+### Progress
+
+```text
+░░░░░░░░░░  0/4
+```
+
+---
+
+## Phase 6 — LLM Engineering
+
+| #  | Chapter                                | Status     |
+| -- | -------------------------------------- | ---------- |
+| 17 | Evaluation, Hallucinations & Inference | ⬜ Upcoming |
+| 18 | Final LLM Application                  | ⬜ Upcoming |
+
+### Progress
+
+```text
+░░░░░░░░░░  0/2
+```
+
+---
+
+# 📊 Overall Progress
+
+```text
+█████░░░░░  5/18
+```
+
+**5 of 18 chapters completed**
+
+---
+
+# 📖 Chapter Details
+
+## Chapter 1 — What Is an LLM?
+
+### Topics Covered
+
+* AI → ML → Deep Learning → NLP → LLM
+* Language modeling
+* Tokens
+* Next-token prediction
+* Training vs inference
+* Parameters and weights
+* Basic statistical language models
+* Probability of language
+
+### Notebook
+
+`01_what_is_an_llm.ipynb`
+
+---
+
+## Chapter 2 — Tokenization & Embeddings
+
+### Topics Covered
+
+* Character-level tokenization
+* Word-level tokenization
+* Subword tokenization
+* Vocabulary
+* Token IDs
+* Encoding and decoding
+* Token embeddings
+* Embedding dimensions
+* Embedding matrices
+* Positional information
+
+### Notebook
+
+`02_tokenization_embeddings.ipynb`
+
+---
+
+## Chapter 3 — Neural Networks for Language Modeling
+
+### Topics Covered
+
+* Neural networks
+* Parameters and weights
+* Forward propagation
+* Activation functions
+* Logits
+* Probabilities
+* Cross-entropy loss
+* Gradients
+* Backpropagation
+* Gradient descent
+* Training loop
+* Tiny neural language model
+
+### Notebook
+
+`03_neural_language_model.ipynb`
+
+---
+
+## Chapter 4 — Attention
+
+### Topics Covered
+
+* Why attention is needed
+* Query, Key, Value
+* Dot-product similarity
+* Attention scores
+* Softmax
+* Attention weights
+* Weighted aggregation
+* Multiple queries
+* Scaling
+* Attention from scratch
+* NumPy implementation
+* PyTorch implementation
+* Attention experiments
+
+### Core Equation
+
+$$
+Attention(Q,K,V)
+=
+softmax
+\left(
+\frac{QK^T}{\sqrt{d_k}}
+\right)V
+$$
+
+### Notebook
+
+`04_attention.ipynb`
+
+---
+
+## Chapter 5 — Self-Attention & Multi-Head Attention
+
+### Topics Covered
+
+* Self-attention
+* Q, K, V projections
+* Attention score matrix
+* Scaled dot-product attention
+* Softmax
+* Attention weights
+* Weighted aggregation
+* Causal masking
+* Why GPT requires causal masking
+* Self-attention from scratch
+* NumPy implementation
+* PyTorch implementation
+* Multi-head attention
+* Attention heads
+* Head dimension
+* Concatenation of heads
+* Output projection
+* Self-attention vs cross-attention
+* Multi-head attention experiments
+
+### Core Equations
+
+Query, Key and Value:
+
+$$
+Q=XW_Q
+$$
+
+$$
+K=XW_K
+$$
+
+$$
+V=XW_V
+$$
+
+Self-attention:
+
+$$
+Attention(Q,K,V)
+=
+softmax
+\left(
+\frac{QK^T}{\sqrt{d_k}}
+\right)V
+$$
+
+Multi-head attention:
+
+$$
+head_i =
+Attention
+(XW_Q^{(i)},
+XW_K^{(i)},
+XW_V^{(i)})
+$$
+
+$$
+MultiHead =
+Concat(head_1,\ldots,head_h)W_O
+$$
+
+### Notebook
+
+`05_self_attention.ipynb`
+
+---
+
+# 🔜 Current Chapter
+
+## Chapter 6 — Transformer Architecture
+
+We will now take everything learned so far and build a **complete Transformer block**.
+
+### Topics
+
+* Transformer blocks
+* Residual connections
+* Layer normalization
+* Feed-forward networks
+* Dropout
+* Positional embeddings
+* Complete Transformer block
+* PyTorch implementation
+* Architecture experiments
+
+### Notebook
+
+`06_transformer.ipynb`
+
+---
+
+# 🗂️ Repository Structure
 
 ```text
 llm-learning/
@@ -375,24 +364,19 @@ llm-learning/
 ├── 01_what_is_an_llm.ipynb
 ├── 02_tokenization_embeddings.ipynb
 ├── 03_neural_language_model.ipynb
-│
 ├── 04_attention.ipynb
 ├── 05_self_attention.ipynb
 ├── 06_transformer.ipynb
-│
 ├── 07_gpt_from_scratch.ipynb
 ├── 08_train_gpt.ipynb
 ├── 09_text_generation.ipynb
-│
 ├── 10_pretraining_finetuning.ipynb
 ├── 11_lora_instruction_tuning.ipynb
 ├── 12_huggingface_and_apis.ipynb
-│
 ├── 13_prompt_engineering.ipynb
 ├── 14_semantic_search.ipynb
 ├── 15_rag.ipynb
 ├── 16_llm_agents.ipynb
-│
 ├── 17_llm_engineering.ipynb
 │
 └── 18_final_llm_application/
@@ -400,98 +384,56 @@ llm-learning/
 
 ---
 
-# 📊 Progress
+# 🎯 Final Goal
+
+By completing all 18 chapters, the goal is to understand the complete LLM stack:
 
 ```text
-Phase 1 — Foundations       ██████████  3/3
-Phase 2 — Transformers      ███░░░░░░░  1/3
-Phase 3 — Build GPT         ░░░░░░░░░░  0/3
-Phase 4 — Modern LLMs       ░░░░░░░░░░  0/3
-Phase 5 — Applications      ░░░░░░░░░░  0/4
-Phase 6 — Engineering       ░░░░░░░░░░  0/2
-```
-
-**Overall: 4 / 18 chapters completed**
-
----
-
-# 🛠️ Tools & Technologies
-
-The learning process primarily uses:
-
-* Python
-* NumPy
-* PyTorch
-* Google Colab
-* Hugging Face
-* LLM APIs
-
-Tools and frameworks will be introduced **only when they are relevant to the current chapter**.
-
----
-
-# 📓 Notebooks
-
-Each chapter contains a corresponding Google Colab/Jupyter notebook with:
-
-* Explanations
-* Code
-* Experiments
-* Outputs
-* Exercises
-* Interview questions
-* Key takeaways
-
-The notebooks are designed to be understandable independently, so another learner can follow the repository without needing access to the original learning sessions.
-
----
-
-# 🚫 Scope
-
-This repository follows a **fixed 18-chapter syllabus**.
-
-No unrelated topics or random technologies will be added during the learning process.
-
-The progression is intentionally structured:
-
-```text
-LLM Fundamentals
-       ↓
-Tokenization & Embeddings
-       ↓
+Language
+   ↓
+Tokens
+   ↓
+Embeddings
+   ↓
 Neural Networks
-       ↓
+   ↓
 Attention
-       ↓
-Transformers
-       ↓
+   ↓
+Self-Attention
+   ↓
+Multi-Head Attention
+   ↓
+Transformer
+   ↓
 GPT
-       ↓
-Training & Fine-Tuning
-       ↓
-Modern LLM Tools
-       ↓
-RAG & Agents
-       ↓
-LLM Engineering
-       ↓
-Final Application
+   ↓
+Pretraining
+   ↓
+Fine-Tuning
+   ↓
+Instruction Tuning
+   ↓
+Prompting
+   ↓
+Embeddings
+   ↓
+Semantic Search
+   ↓
+RAG
+   ↓
+Agents & Tool Calling
+   ↓
+Evaluation
+   ↓
+Production LLM Application
 ```
 
 ---
 
-# 🎯 Final Outcome
+# 🚀 Status
 
-At the end of this journey, this repository will contain a complete collection of hands-on notebooks demonstrating my understanding of LLMs from fundamentals to practical applications.
+**Current:** Chapter 5 completed ✅
 
-The final project will combine the concepts learned throughout the course into a complete LLM application.
+**Next:** Chapter 6 — Transformer Architecture 🔜
 
----
-
-## 🚀 Current Chapter
-
-**Chapter 5 — Self-Attention & Multi-Head Attention**
-
-Next, we will build on the attention mechanism and understand how **self-attention allows every token in a sequence to interact with other tokens**, followed by causal masking and multi-head attention.
-
----
+**Overall:** 5 / 18 chapters completed
